@@ -4,7 +4,7 @@
 Converts FrictionData into a format that can be used for training with ffm::FluxFrictionModel 
 
 """
-function flux_assemble(fdata::Array{DATA}, fm::FrictionModel, ffm::FluxFrictionModel; weights = Dict("observations" => ones(length(data)), "diag" => 2.0, "sub_diag" => 1.0, "off_diag"=>1.0)) where {DATA<:FrictionData}
+function flux_assemble(fdata::Array{DATA}, fm::FrictionModel, ffm::FluxFrictionModel; weights = Dict("observations" => ones(length(fdata)), "diag" => 2.0, "sub_diag" => 1.0, "off_diag"=>1.0)) where {DATA<:FrictionData}
     @assert keys(fm.matrixmodels) == ffm.model_ids
     transforms = get_transform(ffm)
     return _flux_assemble(fdata, fm, transforms; weights = weights)

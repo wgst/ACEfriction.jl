@@ -1,10 +1,14 @@
+using ACEfriction
 using ACEfriction.DataUtils: load_h5fdata, save_h5fdata
 using Test
 using ACEbase.Testing
 
 @info "Test HDF5 import and export of friction data."  
 
-data1 = load_h5fdata("./test/test-data.h5");
+fname = "/test/test-data-100"
+filename = string(pkgdir(ACEfriction),fname,".h5")
+
+data1 = ACEfriction.DataUtils.load_h5fdata(filename); 
 save_h5fdata(data1, "./test/test-data-temp.h5");
 data2= load_h5fdata("./test/test-data-temp.h5");
 rm("./test/test-data-temp.h5")

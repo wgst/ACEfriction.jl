@@ -18,21 +18,7 @@ using JuLIP
 using Random 
 
 #%% Load data
-path = Base.Filesystem.pwd()
-# fname = "/test/test-data-100"
-fname = "/test-data-100"
-filename = string(path,fname,".h5")
 
-rdata = ACEfriction.DataUtils.load_h5fdata(filename); 
-
-# Partition data into train and test set and convert to 
-rng = MersenneTwister(12)
-shuffle!(rng, rdata)
-n_train = Int(ceil(.8 * length(rdata)))
-n_test = length(rdata) - n_train
-
-fdata = Dict("train" => FrictionData.(rdata[1:n_train]), 
-            "test"=> FrictionData.(rdata[n_train+1:end]));
 
 
 evalcenter= AtomCentered()
