@@ -19,7 +19,8 @@ using Random
 
 #%% Load data
 path = Base.Filesystem.pwd()
-fname = "/test/test-data-100"
+# fname = "/test/test-data-100"
+fname = "/test-data-100"
 filename = string(path,fname,".h5")
 
 rdata = ACEfriction.DataUtils.load_h5fdata(filename); 
