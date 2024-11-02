@@ -16,9 +16,11 @@ using LinearAlgebra
 using Test
 using JuLIP
 using Random 
+
 #%% Load data
-fname = "./test/test-data-100"
-filename = string(fname,".h5")
+path = Base.Filesystem.pwd()
+fname = "/test/test-data-100"
+filename = string(path,fname,".h5")
 
 rdata = ACEfriction.DataUtils.load_h5fdata(filename); 
 
