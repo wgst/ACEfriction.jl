@@ -28,7 +28,7 @@
 
 ## About ACEfriction.jl
 
-ACEfriction.jl facilitates simulation and machine learning of configuration-dependent friction tensor models from data. In more general terms, it allows efficient representation, learning, and evaluation of $E(3)$-equivariant symmetric positive semi-definite matrix-valued functions on 3D-point clouds, i.e., $E(3)$-equivariant functions of the form
+ACEfriction.jl facilitates simulation and machine learning of configuration-dependent friction tensor models from data. In more general terms, ACEfriction.jl provides function for efficient representation, learning, and evaluation of $E(3)$-equivariant symmetric positive semi-definite matrix-valued functions on 3D-point clouds, i.e., $E(3)$-equivariant functions of the form
 ```math
 {\bf \Gamma}({\bf r}_1, \dots, {\bf r}_N, {z_1},\dots,{z_N}) \in \mathcal{SPSD}_{3N},
 ```
