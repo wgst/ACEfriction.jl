@@ -38,7 +38,7 @@ The underlying representation is based on an equivariant Atomic Cluster Expansio
 
 ## Documentation
 
-For details, please refer to the [Documentation](https://acesuit.github.io/ACEfriction.jl/dev/), which includes a function manual and [Workflow Examples](https://acesuit.github.io/ACEfriction.jl/dev/fitting-eft/) of fitting an Electronic Friction Tensor as well as a momentum-conserving friction tensor model as commonly employed in Dissipative Particle Dynamics.  
+For details, please refer to the [Documentation](https://acesuit.github.io/ACEfriction.jl/dev/), which includes a function manual and [Workflow Examples](https://acesuit.github.io/ACEfriction.jl/dev/fitting-eft/) of fitting an electronic friction tensor as well as a momentum-conserving friction tensor model as commonly employed in Dissipative Particle Dynamics.  
 
 ## Installation
 To install ACEfriction.jl run the following code in a Julia-REPL:
