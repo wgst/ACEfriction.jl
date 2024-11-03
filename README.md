@@ -43,7 +43,7 @@ For details, please refer to the [Documentation](https://acesuit.github.io/ACEfr
 ## Installation
 To install ACEfriction.jl run the following code in a Julia-REPL:
 ```julia-repl
-] add registry https://github.com/ACEsuit/ACEregistry
+] registry add https://github.com/ACEsuit/ACEregistry
 ] add ACEfriction
 ```
 More detailed instructions can be found in the [Installation Guide](https://acesuit.github.io/ACEfriction.jl/dev/installation/) of the Documentation. 
