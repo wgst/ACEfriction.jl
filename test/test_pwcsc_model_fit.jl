@@ -39,10 +39,10 @@ species_env = [:Cu,:H]
 species_substrat = [:Cu]
 rcut = 5.0
 
-m_equ_on = OnsiteOnlyMatrixModel(EuclideanMatrix(), species_friction, species_env, species_substrat;  n_rep = 3, rcut_on = rcut, maxorder_on=2, maxdeg_on=3,
-    species_maxorder_dict_on = Dict( :H => 1), 
-    species_weight_cat_on = Dict(:H => .75, :Cu=> 1.0)
-    );
+m_equ_on =  OnsiteOnlyMatrixModel(EuclideanMatrix(Float64), species_friction, species_env; species_substrat=species_substrat, id=:equ0, n_rep = 3, rcut = rcut, maxorder=2, maxdeg=3,
+species_maxorder_dict = Dict( :H => 1), 
+species_weight_cat = Dict(:H => .75, :Cu=> 1.0)
+);
 
 m_equ_off = PWCMatrixModel(EuclideanMatrix(Float64),species_friction,species_env;
         z2sym= NoZ2Sym(),
