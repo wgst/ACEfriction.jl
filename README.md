@@ -58,3 +58,7 @@ If you use this code, please cite our paper:
   year={2024}
 }
 ```
+
+## License
+
+ACEfriction.jl is published and distributed under the [MIT License](LICENSE).
