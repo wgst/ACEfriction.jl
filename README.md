@@ -34,7 +34,7 @@ ACEfriction.jl facilitates simulation and machine learning of configuration-depe
 ```
 where $`{\bf r}_i \in \mathbb{R}^3,\; (i=1,\dots,N)`$, are the positions of points in the point cloud, the $`z_i`$s are some discrete features (e.g., chemical element types) and $\mathcal{SPSD}_{3N} \subset \mathbb{R}^{3N \times 3N}$ is the set of $3N\times 3N$-dimensional positive semi-definite matrices.
 
-The underlying representation is based on an equivariant Atomic Cluster Expansion and, as such, size-transferrable, i.e., models can be trained and evaluated on 3D-point clouds comprised of arbitrary numbers of particles $N$.    
+The underlying representation is based on an equivariant Atomic Cluster Expansion and, as such, size-transferrable, i.e., models can be trained and evaluated on 3D-point clouds comprised of arbitrary number, $N$, of particles.    
 
 ## Documentation
 
