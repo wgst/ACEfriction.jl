@@ -1,6 +1,5 @@
 using ACE
-using ACEatoms
-using ACE, ACEatoms, JuLIP, ACEbase
+using ACE, JuLIP, ACEbase
 using ACE: save_json, load_json
 using JuLIP: AtomicNumber
 #import ACE: write_dict, read_dict
