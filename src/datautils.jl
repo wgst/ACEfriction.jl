@@ -1,6 +1,7 @@
 
 module DataUtils
 
+using Pandas
 using ProgressMeter
 using JuLIP
 using ACEfriction.mUtils: reinterpret
